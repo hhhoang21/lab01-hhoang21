@@ -15,3 +15,10 @@ def test_unknown():
 
 def test_empty():
     assert reply("   ") == "Please type a question."
+
+
+def test_FA_office_lookup():
+    assert "E.001" in reply("Where is Finance and Accounting Office?")
+
+def test_ACC_office_lookup():
+    assert "E.002" in reply("Where is Admissions and Career Counseling Office ?")
